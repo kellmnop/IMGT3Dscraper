@@ -92,7 +92,7 @@ class scraper:
         if results_table is None:
             raise Exception("No results table found in the response.")
 
-        results_df = pandas.read_html(io.StringIO(str(results_table)))[0]
+        results_df = pandas.read_html(io.StringIO(str(results_table)), header=0, index_col=0)[0]
 
         # Validate if the output path is writable
         output_dir = os.path.dirname(self.outfile)
