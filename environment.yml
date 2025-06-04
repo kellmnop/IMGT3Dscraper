@@ -1,0 +1,11 @@
+name: IMGTscraper
+channels:
+  - conda-forge
+dependencies:
+  - beautifulsoup4
+  - ipython
+  - matplotlib-inline
+  - numpy
+  - pandas
+  - python=3.10.18=hd6af730_0_cpython
+  - six
